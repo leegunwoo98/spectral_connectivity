@@ -13,7 +13,7 @@ from spectral_connectivity.statistics import (adjust_for_multiple_comparisons,
                                               fisher_z_transform,
                                               get_normal_distribution_p_values)
 
-if os.environ.get('SPEC_CON_ENABLE_GPU') == 'true':
+if os.environ.get('SPECTRAL_CONNECTIVITY_ENABLE_GPU') == 'true':
     try:
         import cupy as xp
         from cupyx.scipy.fft import ifft
